@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Թեստ ստեղծել — Ուսուչ Քիզ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="create-test">
+
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">📘</span> Ուսուչ Քիզ</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Տուն</a></li>
+      <li><a href="teacher.html" class="active">Ուսուչների համար</a></li>
+      <li><a href="student.html">Ուսանողների համար</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="teacher.html" class="btn btn-outline btn-sm">← Հաշվապահ</a>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Ցանկ">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu container" id="mobile-menu">
+    <a href="index.html">Տուն</a>
+    <a href="teacher.html">Ուսուչի Հաշվապահ</a>
+    <a href="student.html">Ուսանողների համար</a>
+  </div>
+</header>
+
+<main>
+  <div class="container" style="max-width:820px;">
+
+    <div class="page-header">
+      <h1 id="page-title">Նոր թեստ ստեղծել</h1>
+      <p>Լրացրեք ստորև մանրամասները, ավելացրեք ձեր հարցերը, այնուհետև պահպանեք սևագրով կամ հրատարակեք անմիջապես:</p>
+    </div>
+
+    <div id="form-error" class="error-banner"></div>
+    <div id="form-success" class="success-banner"></div>
+
+    <div class="card card-pad" style="margin-bottom:22px;">
+      <h2 style="font-size:16px; margin-bottom:18px;">Թեստի մանրամասներ</h2>
+      <div class="field">
+        <label>Թեստի վերնագիր</label>
+        <input type="text" id="field-title" placeholder="օր. Կոտորակների քիզ — Գլուխ 4">
+      </div>
+      <div class="field">
+        <label>Նկարագրություն</label>
+        <textarea id="field-description" placeholder="Կարճ նկարագրություն, որը ուսանողները կտեսնեն սկսելուց առաջ:"></textarea>
+      </div>
+      <div class="row-2">
+        <div class="field">
+          <label>Առարկա</label>
+          <select id="field-subject"></select>
+        </div>
+        <div class="field">
+          <label>Դասարան / Կլաս</label>
+          <select id="field-grade"></select>
+        </div>
+      </div>
+      <div class="field" style="max-width:220px;">
+        <label>Ժամանակային սահմանափակում (րոպեներ)</label>
+        <input type="number" id="field-time-limit" value="10" min="1">
+      </div>
+    </div>
+
+    <div class="card card-pad" style="margin-bottom:22px;">
+      <h2 style="font-size:16px; margin-bottom:18px;">Հարցեր</h2>
+      <div id="questions-container"></div>
+      <button type="button" class="btn btn-outline" id="add-question-btn">+ Հարց ավելացնել</button>
+    </div>
+
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <button type="button" class="btn btn-outline" id="save-draft-btn">Պահպանել որպես սևագիր</button>
+      <button type="button" class="btn btn-primary" id="publish-btn">Թեստ հրատարակել</button>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-bottom">© 2026 Ուսուչ Քիզ — դասասենյակային թեստավորման նախատիպ:</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

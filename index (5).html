@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Թեստ մտնել — Ուսուչ Քիզ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="student">
+
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">📘</span> Ուսուչ Քիզ</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Տուն</a></li>
+      <li><a href="teacher.html">Ուսուչների համար</a></li>
+      <li><a href="student.html" class="active">Ուսանողների համար</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-outline btn-sm">← Տուն</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="entry-wrap">
+    <div class="card entry-card">
+      <div class="brand-mark" style="width:52px;height:52px;font-size:24px;border-radius:14px;">🎓</div>
+      <h1>Թեստ միանալ</h1>
+      <p class="sub">Մտեք ձեր անունը և ձեր ուսուչի կիսած կոդը:</p>
+
+      <div id="entry-error" class="error-banner"></div>
+
+      <form id="entry-form">
+        <div class="field">
+          <label>Ձեր անունը</label>
+          <input type="text" id="field-student-name" placeholder="օր. Անի Սարգսյան" autocomplete="name">
+        </div>
+        <div class="field">
+          <label>Թեստի կոդ</label>
+          <input type="text" id="field-test-code" placeholder="օր. K7M2QX" style="text-transform:uppercase; letter-spacing:0.08em; font-weight:600;">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Թեստ սկսել</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

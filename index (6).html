@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ուսուչի Հաշվապահ — Ուսուչ Քիզ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="teacher">
+
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">📘</span> Ուսուչ Քիզ</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Տուն</a></li>
+      <li><a href="teacher.html" class="active">Ուսուչների համար</a></li>
+      <li><a href="student.html">Ուսանողների համար</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="create-test.html" class="btn btn-primary btn-sm">+ Թեստ ստեղծել</a>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Ցանկ">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu container" id="mobile-menu">
+    <a href="index.html">Տուն</a>
+    <a href="student.html">Ուսանողների համար</a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <div class="page-header">
+      <div class="page-header-row">
+        <div>
+          <h1>Ուսուչի Հաշվապահ</h1>
+          <p>Կառավարեք ձեր թեստերը և տեսեք, թե ինչպես են ձեր ուսանողները անում:</p>
+        </div>
+        <a href="create-test.html" class="btn btn-primary">+ Նոր թեստ ստեղծել</a>
+      </div>
+    </div>
+
+    <div class="dash-stats">
+      <div class="card dash-stat">
+        <div class="icon-badge" style="background:var(--primary-light); color:var(--primary-dark);">📝</div>
+        <div class="label">Ընդամենը թեստեր</div>
+        <div class="value" id="dash-total-tests">0</div>
+      </div>
+      <div class="card dash-stat">
+        <div class="icon-badge" style="background:var(--teal-light); color:#0F766E;">✅</div>
+        <div class="label">Հրատարակված թեստեր</div>
+        <div class="value" id="dash-published-tests">0</div>
+      </div>
+      <div class="card dash-stat">
+        <div class="icon-badge" style="background:var(--amber-light); color:#B45309;">🎓</div>
+        <div class="label">Ընդամենը ուսանողներ</div>
+        <div class="value" id="dash-total-students">0</div>
+      </div>
+      <div class="card dash-stat">
+        <div class="icon-badge" style="background:var(--primary-light); color:var(--primary-dark);">📈</div>
+        <div class="label">Միջին միավոր</div>
+        <div class="value" id="dash-avg-score">—</div>
+      </div>
+    </div>
+
+    <h2 style="font-size:19px; font-weight:700; margin-bottom:16px;">Ձեր թեստերը</h2>
+    <div class="test-list" id="test-list"></div>
+
+    <!-- AI FEATURE CONCEPT — clearly marked as a future capability, not yet functional -->
+    <div class="ai-panel">
+      <div class="ai-panel-head">
+        <h3>🤖 Հարցեր ստեղծել AI-ով</h3>
+        <span class="coming-soon-badge">Շուտով</span>
+      </div>
+      <p>Նկարագրեք, թե ինչ եք ուզում, և Ուսուչ Քիզի ապագա տարբերակը կսկիզբ հարցերը, չորս պատասխանի ընտրանքները, ճիշտ պատասխանը և դժվարության մակարդակը, որպեսզի հրատարակելուց առաջ ստուգեք և խմբագրեք:</p>
+      <textarea placeholder='Օրինակ: "Ստեղծեք 10 հարց 7-րդ դասարանի Հայ պատմության մասին Բաղրամյան թագավորության մասին:"' disabled></textarea>
+      <button class="btn btn-primary" id="ai-generate-btn" disabled title="Այս հատկությունը պլանավորված է ապագա տարբերակի համար">✨ Հարցեր ստեղծել</button>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-bottom">© 2026 Ուսուչ Քիզ — դասասենյակային թեստավորման նախատիպ:</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

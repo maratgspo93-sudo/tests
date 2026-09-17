@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Թեստն ընթացքի մեջ է — Ուսուչ Քիզ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="test">
+
+<header class="navbar">
+  <div class="container navbar-inner">
+    <span class="brand"><span class="brand-mark">📘</span> Ուսուչ Քիզ</span>
+    <span style="font-size:13px; color:var(--text-muted);">Հաջողություն! Պատասխանեք ուշադիր — ձեր թեստն ինքնաբերաբար կուղարկվի, երբ ժամանակը սպառվի:</span>
+  </div>
+</header>
+
+<main class="test-shell">
+
+  <div class="test-top">
+    <div class="test-title-block">
+      <h1 id="test-title">Բեռնվում է…</h1>
+      <span id="test-subtitle"></span>
+    </div>
+    <div class="timer">
+      ⏱ <span id="timer-display">--:--</span>
+    </div>
+  </div>
+
+  <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0%;"></div></div>
+
+  <div class="q-nav-grid" id="question-nav"></div>
+
+  <div class="card question-card">
+    <div class="q-count" id="q-count"></div>
+    <h2 id="q-text"></h2>
+    <div id="options-container"></div>
+  </div>
+
+  <div class="test-actions">
+    <button type="button" class="btn btn-outline" id="prev-btn">← Նախորդը</button>
+    <div>
+      <button type="button" class="btn btn-primary" id="next-btn">Հաջորդը →</button>
+      <button type="button" class="btn btn-primary" id="submit-btn" style="display:none;">Ուղարկել թեստը</button>
+    </div>
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

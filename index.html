@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ուսուչ Քիզ — Առցանց թեստեր և ակնթարթային արդյունքներ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">📘</span> Ուսուչ Քիզ</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Տուն</a></li>
+      <li><a href="teacher.html">Ուսուչների համար</a></li>
+      <li><a href="student.html">Ուսանողների համար</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="student.html" class="btn btn-outline btn-sm">Թեստ մտնել</a>
+      <a href="create-test.html" class="btn btn-primary btn-sm">Թեստ ստեղծել</a>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Ցանկ">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu container" id="mobile-menu">
+    <a href="teacher.html">Ուսուչների համար</a>
+    <a href="student.html">Ուսանողների համար</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">🎓 Դասասենյակների համար ձևավորված</span>
+        <h1>Թեստեր ստեղծեք րոպեներում։ <span class="accent">Գնահատեք ակնթարթորեն։</span></h1>
+        <p class="lead">Ուսուչ Քիզը ուսուչներին թույլ է տալիս կազմել բազմաընտրական թեստեր և դրանք տեղամատ կոդով կիսվել։ Ուսանողները միանում են, պատասխանում են, և տեսնում են իրենց միավորը փոխանցումից անմիջապես հետո — ոչ մի սպասում, ոչ մի փաստաթուղթ:</p>
+        <div class="hero-actions">
+          <a href="create-test.html" class="btn btn-primary">Թեստ ստեղծել</a>
+          <a href="student.html" class="btn btn-outline">Թեստ մտնել</a>
+        </div>
+      </div>
+      <div class="card hero-card">
+        <div class="hero-mock-row"><span>📐 Մաթեմատիկա — Կոտորակների քիզ</span><span class="pill pill-teal">Հրատարակված</span></div>
+        <div class="hero-mock-row"><span>🏛️ Հայ պատմություն — Բաղրամյան թագավորություն</span><span class="pill pill-amber">Սևագիր</span></div>
+        <div class="hero-mock-row"><span>🧬 Կենսաբանություն — Բջջային կառուցվածք</span><span class="pill pill-teal">Հրատարակված</span></div>
+        <div class="hero-mock-row"><span>Թեստի կոդ</span><span class="test-code-tag">K7M2QX</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="container">
+      <div class="section-head">
+        <h2>Ամբողջ, ինչ անհրաժեշտ է դասասենյակային թեստի համար</h2>
+        <p>Պարզ հինգ րոպեի ընկերությունների համար, բայց բավական ամբողջական իսկական քննության համար։</p>
+      </div>
+      <div class="grid-3">
+        <div class="card feature-card">
+          <div class="feature-icon" style="background:var(--primary-light); color:var(--primary-dark);">⚡</div>
+          <h3>Արագ թեստի ստեղծում</h3>
+          <p>Ավելացրեք վերնագիր, ընտրեք առարկա և դասարան, գրեք ձեր հարցերը — հրատարակեք րոպեներում։</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon" style="background:var(--teal-light); color:#0F766E;">🔑</div>
+          <h3>Մեկ կոդ, հեշտ կիսում</h3>
+          <p>Յուրաքանչյուր թեստ ստանում է կարճ եզակի կոդ։ Կիսեք այն տախտակին և ուսանողները մեջ են:</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon" style="background:var(--amber-light); color:#B45309;">📊</div>
+          <h3>Ակնթարթային արդյունքներ</h3>
+          <p>Միավորներ, տոկոսներ և պատասխանների ստուգում հայտնվում են ուսանողի փոխանցումից դրանից հետո:</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon" style="background:var(--primary-light); color:var(--primary-dark);">⏱️</div>
+          <h3>Ներկառուցված ժամանակ</h3>
+          <p>Սահմանեք ժամանակային սահմանափակում թեստի համար; հաշվարկը ինքնաբերմիջ ներմուծում է ժամանակ ավելի վերջում:</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon" style="background:var(--teal-light); color:#0F766E;">📱</div>
+          <h3>Աշխատում է ցանկացած սարքում</h3>
+          <p>Մաքուր, արձագանքային դասավորում համակարգիչի, պլանշետի և հեռախոսի համար — դասասենյակում կամ տանը:</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon" style="background:var(--amber-light); color:#B45309;">📚</div>
+          <h3>Ցանկացած առարկա</h3>
+          <p>Մաթեմատիկա, լեզուներ, պատմություն, գիտություններ և ավելին — կազմակերպված առարկայի և դասարանի մեջ:</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="section-head">
+        <h2>Ինչպես է դա աշխատում</h2>
+        <p>Դատարկ էջից գնահատական թեստ չորս քայլերում:</p>
+      </div>
+      <div class="steps-row">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Ուսուչը ստեղծում է թեստ</h3>
+          <p>Ավելացրեք հարցեր, ընտրանքներ և ճիշտ պատասխանները, այնուհետև հրատարակեք:</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Կիսեք կոդը</h3>
+          <p>Եզակի կոդ ինքնաբերմիջ ստեղծվում է ուսանողների մեջ միանալու համար:</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Ուսանողը տանում է թեստը</h3>
+          <p>Մեկ հարց մեկ ժամանակ, կենդանի հաշվապահի հետ:</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <h3>Ակնթարտային արդյունքներ</h3>
+          <p>Միավոր, տոկոս և պատասխանների ստուգում հայտնվում են ակնթարտորեն:</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section>
+    <div class="container">
+      <div class="stats-band">
+        <div class="stats-grid">
+          <div><b id="stat-tests">0</b><span>Թեստեր ստեղծված</span></div>
+          <div><b id="stat-students">0</b><span>Ուսանողներ</span></div>
+          <div><b id="stat-submissions">0</b><span>Թեստեր ավարտված</span></div>
+          <div><b id="stat-avg">0%</b><span>Միջին միավոր</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Ուսուչ Քիզ</h4>
+        <span>Առցանց թեստեր ակնթարտային արդյունքներով։</span>
+      </div>
+      <div class="footer-col">
+        <h4>Հարթակ</h4>
+        <a href="teacher.html">Ուսուչի Հաշվապահ</a>
+        <a href="create-test.html">Թեստ ստեղծել</a>
+        <a href="student.html">Թեստ մտնել</a>
+      </div>
+      <div class="footer-col">
+        <h4>Առարկաներ</h4>
+        <span>Մաթեմատիկա · Անգլերեն · Ֆիզիկա</span>
+        <span>Հայ լեզու & Պատմություն</span>
+        <span>Կենսաբանություն · Քիմիա · Աշխարհագրություն</span>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Ուսուչ Քիզ — դասասենյակային թեստավորման նախատիպ:</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

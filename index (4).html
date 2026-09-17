@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ձեր արդյունքները — Ուսուչ Քիզ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="results">
+
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">📘</span> Ուսուչ Քիզ</a>
+    <a href="index.html" class="btn btn-outline btn-sm">Տուն</a>
+  </div>
+</header>
+
+<main>
+  <div class="results-wrap">
+    <div class="score-ring" id="score-ring" style="--pct:0;">
+      <div class="score-ring-inner">
+        <b id="result-percentage">0%</b>
+        <span>Միավոր</span>
+      </div>
+    </div>
+
+    <h1 id="result-test-title" style="font-size:22px;">Թեստ</h1>
+    <p class="result-meta">Հիանալի աշխատանք, <strong id="result-student-name">Ուսանող</strong>!</p>
+
+    <div class="result-stats">
+      <div class="card result-stat"><b id="result-correct" style="color:var(--success);">0</b><span>Ճիշտ</span></div>
+      <div class="card result-stat"><b id="result-incorrect" style="color:var(--danger);">0</b><span>Սխալ</span></div>
+      <div class="card result-stat"><b id="result-time">0:00</b><span>Ծախսված ժամանակ</span></div>
+    </div>
+
+    <div class="result-actions">
+      <button type="button" class="btn btn-outline" id="review-toggle-btn">Պատասխանները ստուգել</button>
+      <a href="index.html" class="btn btn-primary">Վերադառնալ տուն</a>
+    </div>
+
+    <div id="review-list" class="review-list"></div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

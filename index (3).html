@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Թեստի արդյունքներ — Ուսուչ Քիզ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="dashboard">
+
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a href="index.html" class="brand"><span class="brand-mark">📘</span> Ուսուչ Քիզ</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Տուն</a></li>
+      <li><a href="teacher.html" class="active">Ուսուչների համար</a></li>
+      <li><a href="student.html">Ուսանողների համար</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="teacher.html" class="btn btn-outline btn-sm">← Հաշվապահ</a>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Ցանկ">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu container" id="mobile-menu">
+    <a href="index.html">Տուն</a>
+    <a href="teacher.html">Ուսուչի Հաշվապահ</a>
+    <a href="student.html">Ուսանողների համար</a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <div class="page-header">
+      <div class="page-header-row">
+        <div>
+          <h1>Թեստի արդյունքներ</h1>
+          <p>Տեսեք, թե ինչպես են ուսանողները անցել կոնկրետ թեստը:</p>
+        </div>
+        <select id="test-select" class="select-inline"></select>
+      </div>
+    </div>
+
+    <div id="dashboard-content" style="margin-top:20px;"></div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container footer-bottom">© 2026 Ուսուչ Քիզ — դասասենյակային թեստավորման նախատիպ:</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
